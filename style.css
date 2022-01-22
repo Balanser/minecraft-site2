@@ -23,7 +23,7 @@ body {
     margin: 10px;
 }
 .welcome {
- background-color: black;
+ background-color: rgb(255, 0, 0);
  position: relative;   
 }
 .welcome-img {
