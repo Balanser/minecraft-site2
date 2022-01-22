@@ -62,3 +62,22 @@ button {
     height: 50px;
     vertical-align: middle;
 }
+.about-about {
+    display: flex;
+    justify-content: center;
+    
+}
+.about-heading {
+    text-align: center;
+    font-weight: normal;
+    font-size: 32px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.about-text {
+    margin: 30px 20px;
+    display: flex;
+    align-items: center;
+}
+.about-text img {
+    margin-right: 10px;
+}
