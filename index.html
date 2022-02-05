@@ -10,6 +10,10 @@
 </head>
 
 <body>
+    <div class="head-line">
+        <a href="https://www.minecraft.net/ru-ru"> Войти</a>
+        <a href="https://www.minecraft.net/ru-ru"> Активировать код</a>
+    </div>
     <div class="header">
 
         <div>
@@ -69,8 +73,34 @@
         </div>
 
     </section>
-
-
+    <div class="forma">
+    <form action="Send Feedback" class="message-form">
+        <fieldset>
+            <legend>Обратная связь</legend>
+            <label>
+                <span class="label-text">Ваше имя:</span>
+                <input type="text" class="message-input" name="username" required>
+            </label>
+            <label>
+                <span class="label-text">Ваша фамилия:</span>
+                <input type="text" class="message-input" name="userfamilya" required>
+            </label>
+            <label>
+                <span class="label-text">Email:</span>
+                <input type="email" class="message-input" name="useremail" required>
+            </label>
+            <label>
+                <span class="label-text">Комментарий:</span>
+                <textarea name="comment" cols="30" rows="10" class="message-input"></textarea>
+            </label>
+            <label>
+                <span class="label-text">Ваш телефон:</span>
+                <input type="tel" class="message-input" name="username" required>
+            </label>
+            <button>Отправить отзыв</button>
+        </fieldset>
+    </form>
+</div>
 </body>
 
 </html>
