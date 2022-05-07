@@ -7,9 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Домашнее задание</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    <h1 class="minecraft-text-fon"></h1>
     <div class="head-line">
         <a href="https://www.minecraft.net/ru-ru"> Войти</a>
         <a href="https://www.minecraft.net/ru-ru"> Активировать код</a>
@@ -74,33 +78,61 @@
 
     </section>
     <div class="forma">
-    <form action="Send Feedback" class="message-form">
-        <fieldset>
-            <legend>Обратная связь</legend>
-            <label>
-                <span class="label-text">Ваше имя:</span>
-                <input type="text" class="message-input" name="username" required>
-            </label>
-            <label>
-                <span class="label-text">Ваша фамилия:</span>
-                <input type="text" class="message-input" name="userfamilya" required>
-            </label>
-            <label>
-                <span class="label-text">Email:</span>
-                <input type="email" class="message-input" name="useremail" required>
-            </label>
-            <label>
-                <span class="label-text">Комментарий:</span>
-                <textarea name="comment" cols="30" rows="10" class="message-input"></textarea>
-            </label>
-            <label>
-                <span class="label-text">Ваш телефон:</span>
-                <input type="tel" class="message-input" name="username" required>
-            </label>
-            <button>Отправить отзыв</button>
-        </fieldset>
-    </form>
-</div>
+        <form action="Send Feedback" class="message-form">
+            <fieldset>
+                <legend>Обратная связь</legend>
+                <label>
+                    <span class="label-text">Ваше имя:</span>
+                    <input type="text" class="message-input" name="username" required>
+                </label>
+                <label>
+                    <span class="label-text">Ваша фамилия:</span>
+                    <input type="text" class="message-input" name="userfamilya" required>
+                </label>
+                <label>
+                    <span class="label-text">Email:</span>
+                    <input type="email" class="message-input" name="useremail" required>
+                </label>
+                <label>
+                    <span class="label-text">Комментарий:</span>
+                    <textarea name="comment" cols="30" rows="10" class="message-input"></textarea>
+                </label>
+                <label>
+                    <span class="label-text">Ваш телефон:</span>
+                    <input type="tel" class="message-input" name="username" placeholder="Например:7945635171"
+                        pattern="[0-9]{10}" required>
+                </label>
+                <button>Отправить отзыв</button>
+            </fieldset>
+        </form>
+
+    </div>
+    <section class="slider">
+        <div class="about-heading">
+            Какие бывают мобы?
+        </div>
+        <div class="slider-wrapper">
+            <div class="slider-image">
+                <div class="arrow">&lt; </div>
+                <img src="img/mob_1.jpg" alt="эндермен">
+                <div class="arrow"> &gt; </div>
+            </div>
+            <div class="description-mob">
+                <div class="description-name">
+                    Эндермен
+                </div>
+                <div class="description-text">
+                    Большой и злой игровой моб в Minecraft.
+                    Его тяжело убить и он умеет телепортироваться.
+                </div>
+                <button class="description-button">
+                    Читать подробнее
+                </button>
+            </div>
+
+        </div>
+    </section>
+
 </body>
 
 </html>

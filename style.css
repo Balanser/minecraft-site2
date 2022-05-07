@@ -1,9 +1,14 @@
 body {
     margin: 0px;
-    background-color: rgb(107, 107, 107);
+    background-color: rgb(0, 0, 0);
     background-image: url(img/fon.png);
     color: white;
+    animation-name: fon;
+    animation-duration: 10s;
+    animation-direction: initial;
+    font-family: 'Arimo', sans-serif;
 }
+
 .header {
     background-position: center;
     padding: 10px;
@@ -11,26 +16,62 @@ body {
     justify-content: space-between;
     align-items: center;
 }
-.minecraftLogo{
+
+.minecraftLogo {
     height: 50px;
+
 }
+
+@keyframes fon {
+    0% {
+        opacity: 0%;
+    }
+    50% {
+        opacity: 100%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
+ 
+
 .menu-header {
     display: flex;
 }
+
 .menu-item {
     display: flex;
     align-items: center;
     margin: 10px;
 }
+
 .welcome {
- background-color: rgb(0, 0, 0);
- position: relative;   
+    background-color: rgb(0, 0, 0);
+    position: relative;
+    animation-name: welcome;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
 }
+@keyframes welcome {
+    0% {
+        background-color: black;
+    }
+    50% {
+        background-color: rgb(48, 48, 48);
+    }
+    100% {
+        background-color: black;
+    }
+}
+
+
 .welcome-img {
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
+
 .welcome-text {
     max-width: 500px;
     font-size: 24px;
@@ -40,13 +81,15 @@ body {
     left: 50%;
     top: 10%;
     transform: translateX(-50%);
-    
+
 }
+
 .buttons {
     display: flex;
     justify-content: space-between;
 }
-button {
+
+.buttons button {
     background-color: white;
     height: 60px;
     line-height: 30px;
@@ -62,61 +105,72 @@ button {
     height: 50px;
     vertical-align: middle;
 }
+
 .about-about {
     display: flex;
     justify-content: center;
-    
+
 }
+
 .about-heading {
     text-align: center;
     font-weight: normal;
     font-size: 32px;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
 .about-text {
     margin: 30px 20px;
     display: flex;
     align-items: center;
 }
+
 .about-text img {
     margin-right: 10px;
 }
+
 .head-line {
     background-color: rgb(0, 0, 0, 0.45);
     height: 30px;
     position: sticky;
     top: 15px;
 }
+
 a {
     text-align: center;
     position: relative;
-    color: white; 
+    color: white;
     left: 50%;
     justify-content: space-between;
     transform: translateX(-50%);
 }
+
 .message-form {
     border: 2px groove rgb(255, 0, 0);
-    padding: 20px;
     border-radius: 10px;
     padding: 10%;
-    
+
 }
+
 .message-form fieldset {
     border: 2px groove rgb(255, 255, 255);
 }
 
 .message-input {
-    width: 300px;
-    height: 30px;
+    width: 90%;
+    padding: 10px;
 }
+
 textarea {
     resize: none;
-    height: 300px;
+
 }
+
 .label-text {
+    margin-top: 10px;
     display: block;
 }
+
 .message-form button {
     display: block;
     border-radius: 30px;
@@ -124,14 +178,73 @@ textarea {
     width: 150px;
     background-color: coral;
     color: white;
-    position: relative;
-    top: 10px;
-    left: 50%;
-    transform: translateX(-50%);
+    margin: 10px auto ;
+
 }
+
 .forma {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    max-width: 500px;
+    margin: 50px auto;
+
+}
+.minecraft-text-fon {
+    animation-name: minecraft-text;
+    animation-duration: 10s;
+    animation-delay: initial;
+}
+@keyframes minecraft-text {
+    0% {
+        opacity: 100%;
+    }
+    100% {
+        opacity: 0%;
+    }
+}
+
+.description-button {
+    padding: 10px 20px;
+    background-color: rgb(255, 69, 22);
+    color: white;
+    font-size: 28px;
+    border-radius: 20px;
+    margin: 30px 30px 0px 30px;
+}
+.slider-wrapper {
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slider-image {
+    display:flex;
+    align-items: center;
+    
+}
+.arrow {
+    font-size: 50px;
+    font-weight: bolder;
+    margin: 0 20px;
+    
+}
+.description-mob {
+    border: 2px solid white;
+    width: 350px;
+    height: 350px;
+    margin-left: 100px; 
+}
+.slider .about-heading {
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+.description-name {
+    color: rgb(230, 71, 23);
+    font-size: 32px;
+    font-weight: bold;
+    margin: 30px;
+    font-family: 'Arimo', sans-serif;
+}
+.description-text {
+    margin: 20px 30px;
+    max-width: 250px;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif
 }
